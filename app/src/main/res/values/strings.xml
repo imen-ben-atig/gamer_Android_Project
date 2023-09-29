@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">gamer</string>
+    <string name="text">gamerapp</string>
+    <string name="log_in">Log in</string>
+    <string name="Sign_up">Sign Up</string>
+    <string name="Submit">Submit </string>
+    <string name="code_digit">Code digit 2</string>
+</resources>
