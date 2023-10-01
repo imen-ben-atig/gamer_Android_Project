@@ -2,8 +2,10 @@ package com.example.gamer
 
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SwitchCompat
@@ -36,5 +38,12 @@ class ResetPasswordActivity : AppCompatActivity() {
                 editor.putBoolean("nightMode", true)
             }
             editor.apply()
-        }}
+        }
+        val backArrowButton = findViewById<ImageView>(R.id.backArrowreset)
+
+        backArrowButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+    }
 }

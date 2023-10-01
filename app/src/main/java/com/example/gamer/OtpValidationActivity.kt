@@ -2,8 +2,13 @@ package com.example.gamer
 
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.widget.EditText
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SwitchCompat
@@ -36,5 +41,21 @@ class OtpValidationActivity : AppCompatActivity() {
                 editor.putBoolean("nightMode", true)
             }
             editor.apply()
-        }}
+        }
+        val backArrowButton = findViewById<ImageView>(R.id.backArrowotp)
+
+        backArrowButton.setOnClickListener {
+            val intent = Intent(this, ForgetPasswordActivity::class.java)
+            startActivity(intent)
+        }
+        val inputCode3 = findViewById<EditText>(R.id.inputCode3)
+        inputCode3.addTextChangedListener( object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+            override fun afterTextChanged(s: Editable?) {
+                inputCode3.contentDescription = s.toString()
+            }
+        })
+
+    }
 }

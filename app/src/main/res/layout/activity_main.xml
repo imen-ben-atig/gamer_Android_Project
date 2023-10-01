@@ -45,7 +45,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="390dp"
-            android:layout_height="480dp"
+            android:layout_height="459dp"
             android:layout_gravity="center"
             android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
@@ -56,7 +56,7 @@
 
             <LinearLayout
                 android:layout_width="336dp"
-                android:layout_height="401dp"
+                android:layout_height="354dp"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -68,13 +68,13 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
                     android:hint="Email "
-                    app:boxStrokeColor="#f90043"
-                    app:boxStrokeWidth="1dp"
                     android:textColorHint="@color/colorPrimaryDark"
-                    app:endIconTint="@color/colorPrimaryDark"
+                    app:boxStrokeColor="?attr/colorPrimary"
+                    app:boxStrokeWidth="1dp"
+                    app:endIconTint="?attr/colorPrimary"
                     app:shapeAppearanceOverlay="@style/Button4"
                     app:startIconDrawable="@drawable/ic_mail"
-                    app:startIconTint="#f90043"
+                    app:startIconTint="?attr/colorPrimary"
                     app:startIconTintMode="src_in">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -82,7 +82,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:ems="10"
-                        android:inputType="textPersonName|textEmailAddress"
+                        android:inputType="textEmailAddress"
                         android:textColor="@color/Primary"
                         android:textSize="13sp"
                         android:textStyle="normal" />
@@ -97,13 +97,14 @@
                     android:layout_marginRight="5dp"
                     android:hint="Password"
                     android:textColorHint="@color/colorPrimaryDark"
-                    app:endIconTint="@color/colorPrimaryDark"
+                    app:boxStrokeColor="?attr/colorPrimary"
                     app:boxStrokeWidth="1dp"
                     app:endIconMode="password_toggle"
+                    app:endIconTint="?attr/colorPrimary"
                     app:hintTextColor="#f90043"
                     app:shapeAppearanceOverlay="@style/Button4"
                     app:startIconDrawable="@drawable/ic_lock"
-                    app:startIconTint="#f90043"
+                    app:startIconTint="?attr/colorPrimary"
                     app:startIconTintMode="src_in">
 
 
@@ -126,8 +127,7 @@
                     <CheckBox
                         android:id="@+id/rememberCheckBox"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        />
+                        android:layout_height="wrap_content" />
 
                     <TextView
                         android:layout_width="111dp"
@@ -142,14 +142,15 @@
                         android:id="@+id/forgotPassword"
                         android:layout_width="157dp"
                         android:layout_height="48dp"
-                        android:text="Forget Password?"
+                        android:clickable="true"
+                        android:onClick="onForgetPasswordClick"
+                        android:text="Forgot Password?"
                         android:textAlignment="textEnd"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="14sp"
-                        android:textStyle="bold"
-                        android:clickable="true"
-                        android:onClick="onForgetPasswordClick"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

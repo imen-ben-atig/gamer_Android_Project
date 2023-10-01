@@ -21,6 +21,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".OtpValidationActivity"
+            android:label="OTP Validation Activity">
+        </activity>
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:label="Forget Password Activity">
+        </activity>
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:label="Reset Password Activity">
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Sign Up Activity">
+        </activity>
+
     </application>
 
 </manifest>
