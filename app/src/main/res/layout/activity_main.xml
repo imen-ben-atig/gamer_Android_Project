@@ -78,7 +78,7 @@
                     app:startIconTintMode="src_in">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/eMails"
+                        android:id="@+id/eMail1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:ems="10"
@@ -109,7 +109,7 @@
 
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/passwords"
+                        android:id="@+id/password1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -218,12 +218,14 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/facebook"
                         android:layout_width="110dp"
                         android:layout_height="35dp"
                         android:layout_margin="10dp"
                         android:src="@drawable/ic_btn_facebook" />
 
                     <ImageView
+                        android:id="@+id/gmail"
                         android:layout_width="110dp"
                         android:layout_height="35dp"
                         android:layout_margin="10dp"

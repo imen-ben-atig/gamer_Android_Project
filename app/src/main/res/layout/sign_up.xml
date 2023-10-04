@@ -94,7 +94,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:ems="10"
-                        android:inputType="textEmailAddress"
+                        android:inputType="text"
                         android:textColor="@color/Primary"
                         android:textSize="13sp"
                         android:textStyle="normal"
@@ -118,7 +118,7 @@
                     app:startIconTintMode="src_in">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/eMails"
+                        android:id="@+id/eMail"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:ems="10"
@@ -180,7 +180,7 @@
 
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/passwords"
+                        android:id="@+id/confirmpassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -205,7 +205,7 @@
 
                     <TextView
 
-                        android:id="@+id/submit_area"
+                        android:id="@+id/submitButton"
                         android:layout_width="match_parent"
                         android:layout_height="32dp"
                         android:layout_weight="1"

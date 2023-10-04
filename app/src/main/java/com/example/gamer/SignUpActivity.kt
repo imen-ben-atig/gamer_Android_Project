@@ -14,6 +14,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SwitchCompat
 import androidx.core.content.ContextCompat
+import android.util.Log
+import android.widget.Button
+import android.widget.EditText
 
 class SignUpActivity : AppCompatActivity() {
     private lateinit var switchMode: SwitchCompat
@@ -71,6 +74,37 @@ class SignUpActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        val submitButton = findViewById<TextView>(R.id.submitButton)
+
+        submitButton.setOnClickListener {
+            val nameEditText = findViewById<EditText>(R.id.name)
+            var enteredText = nameEditText.text.toString()
+            Log.d("Tag", "nom : $enteredText")
+
+            val emailEditText = findViewById<EditText>(R.id.eMail)
+            var enteredText1 = emailEditText.text.toString()
+            Log.d("Tag", "adress : $enteredText1")
+
+            val passwordEditText = findViewById<EditText>(R.id.password)
+            var enteredText2 = passwordEditText.text.toString()
+            Log.d("Tag", "password : $enteredText2")
+
+            val confirmpwdEditText = findViewById<EditText>(R.id.confirmpassword)
+            var enteredText3 = confirmpwdEditText.text.toString()
+            Log.d("Tag", "confirm password : $enteredText3")
+
+            println(enteredText)
+            println(enteredText1)
+            println(enteredText2)
+            println(enteredText3)
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+
+        }
+
+
+
 
     }
 
