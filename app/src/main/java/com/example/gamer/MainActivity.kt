@@ -127,9 +127,35 @@ class MainActivity : AppCompatActivity() {
             var enteredText1 = emailEditText.text.toString()
             Log.d("Tag", "email : $enteredText1")
 
+            require(enteredText1.isNotEmpty()) {
+                "L'adresse e-mail est obligatoire."
+            }
+
+            require(enteredText1.matches(Regex("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$"))) {
+                "L'adresse e-mail n'est pas valide."
+            }
+
+
+
             val passwordEditText = findViewById<EditText>(R.id.password)
             var enteredText2 = passwordEditText.text.toString()
             Log.d("Tag", "password : $enteredText2")
+
+            require(enteredText2.isNotEmpty()) {
+                "Le mot de passe est obligatoire."
+            }
+            require(enteredText2.length >= 8) {
+                "Le mot de passe doit contenir au moins 8 caractères."
+            }
+            require(enteredText2.contains("[A-Z]")) {
+                "Le mot de passe doit contenir au moins une lettre majuscule."
+            }
+            require(enteredText2.contains("[a-z]")) {
+                "Le mot de passe doit contenir au moins une lettre minuscule."
+            }
+            require(enteredText2.contains("[0-9]")) {
+                "Le mot de passe doit contenir au moins un chiffre."
+            }
 
 
 
