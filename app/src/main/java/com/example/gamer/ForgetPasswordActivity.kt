@@ -46,7 +46,7 @@ class ForgetPasswordActivity : AppCompatActivity() {
         val backArrowButton = findViewById<ImageView>(R.id.backArrowForgotPwd)
 
         backArrowButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LogInActivity::class.java)
             startActivity(intent)
         }
         val submitTextView = findViewById<TextView>(R.id.submitforget)
