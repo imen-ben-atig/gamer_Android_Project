@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_news"
+        android:enabled="true"
+        android:icon="@drawable/ic_news"
+        android:title="@string/itemNews"/>
+    <item
+        android:id="@+id/item_store"
+        android:enabled="true"
+        android:icon="@drawable/store_foreground"
+        android:title="@string/itemStore"/>
+    <item
+        android:id="@+id/item_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_profil"
+        android:title="@string/itemProfile"/>
+
+</menu>
